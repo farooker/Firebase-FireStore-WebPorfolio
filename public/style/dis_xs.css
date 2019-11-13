@@ -1,0 +1,157 @@
+@media (max-width: 576px) {
+    .topnav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+  }
+  .topnav a {
+  
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+      
+  #bg-header{
+             width: 100%;
+             height: 610px;
+             -webkit-filter: grayscale(100%);
+             filter: grayscale(100%);  
+        }
+  
+  .card {
+   
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-top: 20px;
+  }
+  .button-container 
+      {
+       margin-top: 20px;
+      }
+  
+  .button-container .btn-icon
+    {
+        width: 50px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); 
+        background-color: white;
+        border-radius: 50%; 
+          
+    }
+      
+  #about
+   {
+       margin-top: 5%;
+   }
+   #education
+  {
+      margin-top: 5%;        
+  } 
+   #skill
+  {
+       margin-top: 5%;   
+  }
+    #navbar
+    {
+         transition: margin-left .5s;
+    }
+
+  .topnav a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    #bg-header{
+           width: 100%;
+           height: 400px;
+           
+    }
+
+         #OnImg {
+           position: absolute;
+           left: 50%;
+           top: 30%;
+           transform: translate(-50%, -50%);
+
+        }
+     .cc-profile-image {
+       position: relative;
+            margin-top: 40%;
+          }
+        .cc-profile-image a:before {
+          content: "";
+          border: 15px solid rgba(204, 204, 204, 0.6);
+          border-radius: 50%;
+          height: 180px;
+          width: 180px;
+          position: absolute;
+          left: 0;
+          -webkit-animation: pulsate 1.6s ease-out;
+                  animation: pulsate 1.6s ease-out;
+          -webkit-animation-iteration-count: infinite;
+                  animation-iteration-count: infinite;
+          opacity: 0.0;
+          z-index: 99;
+        }
+
+        .cc-profile-image img {
+          position: relative;
+          border-radius: 50%;
+          height: 180px;
+          width: 180px;
+          padding: 0;
+          margin: 0;
+          border: 15px solid transparent;
+          z-index: 9999;
+          -webkit-transition: all .3s ease-out;
+          transition: all .3s ease-out;
+        }
+
+        .cc-profile-image a:hover img {
+          -webkit-transform: scale(1.06, 1.06);
+                  transform: scale(1.06, 1.06);
+        }
+
+        .cc-profile-image a:hover:before {
+          -webkit-animation: none;
+                  animation: none;
+        }
+
+       #NameMe
+       {   
+           text-align: center;
+           margin-top: 5%;
+           font-family: 'Montserrat', sans-serif;
+           font-size: 15px;
+           color: white;
+           
+       }
+       #NickName
+       {
+           text-align: center;
+           font-size: 8px;
+           font-family: 'Montserrat', sans-serif;
+           color: white;
+       }
+       
+    }

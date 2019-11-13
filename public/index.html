@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style/dis_sm.css">
+    <link rel="stylesheet" type="text/css" href="./style/dis_md.css">
+    <link rel="stylesheet" type="text/css" href="./style/dis_xs.css">
+    <link rel="stylesheet" type="text/css" href="./style/navigaiton.css">
+    <link rel="stylesheet" type="text/css" href="./style/footer.css">
+  </head>
+<style>
+    html {
+       scroll-behavior: smooth;
+    }
+ 
+/*Profile*/
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+            transform: scale(0.6, 0.6);
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 0.0;
+  }
+}
+@keyframes pulsate {
+  0% {
+    -webkit-transform: scale(0.6, 0.6);
+            transform: scale(0.6, 0.6);
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+    opacity: 0.0;
+  }
+} 
+
+/* Professional Skills Style */
+
+.progress-container {
+  margin-bottom: 20px;
+  font-size: 18px;
+
+}
+.progress-container .progress {
+  height: 5px;
+  font-size: 18px;
+}
+
+.progress-container .aos-animate {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+/* Experience Style */
+.cc-experience .cc-experience-header {
+  padding-top: 60px;
+  padding-right: 0;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Education Style */
+.cc-education .h5 {
+  margin-bottom: 0;
+}
+
+.cc-education .cc-education-header {
+  padding-top: 60px;
+  padding-right: 0;
+  text-align: center;
+  color: #fff;
+}
+.section
+{
+  margin-top: 4%;
+  margin-bottom: 2%;
+}
+
+.cards1 {
+    margin: -1rem;
+}
+
+.card1 {
+    width: 46.5%;
+    float: left;
+    margin: 1rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+ 
+}
+.card1:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card1 .container {
+  padding: 2px 16px;
+}
+
+@media (max-width: 991px) {   
+  .card1 {
+    width: 45%;
+    float: left;
+    margin: 1rem;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+ 
+  }
+  
+  @media (max-width: 767px) {
+  .cards1 {
+    margin: 1%;
+}   
+    .card1 {
+      width: 95%;
+      margin-left: 30%;
+      margin: 1rem;
+      border: 1px solid #d3d3d3;
+      border-radius: 5px;
+      background-color: white;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      transition: 0.3s;
+  
+    }
+  }
+}
+</style>
+   
+  <body>
+    
+      <img src="./public/ws_Night_Moon_Mountains_&_Sea_1920x1200.jpg" class="img-fluid" id="bg-header" >
+      <div id="OnImg">
+           <div class="cc-profile-image"><a href="#"><img src="./public/me.jpg" alt="Image"/></a></div>
+        <h2 id="NameMe" >PANUWAT SOMJAI</h2>
+        <h2 id="NickName">FAROOK DEVELOPER</h2>   
+    </div>
+     <nav class="topnav fixed-top" id="navbar">
+          <div class="container">
+              <a  href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
+              <a id="p5" href="#Portfolio">Portfolio</a>
+              <a id="p4" href="#experience">Experience</a>
+              <a id="p3" href="#skill">Skill</a>
+              <a id="p2" href="#education">Education</a>
+              <a id="p1" href="#about">About</a>
+             </div>
+          <a href="javascript:void(0);" class="icon" onclick="openNav()">
+              <i class="fa fa-bars"></i>
+         </a>
+      </nav>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#about" onclick="closeNav()">About</a>
+  <a href="#education" onclick="closeNav()">Education</a>
+  <a href="#skil" onclick="closeNav()">Skill</a>
+  <a href="#experience" onclick="closeNav()">Experience</a>
+  <a href="#Portfolio"  onclick="closeNav()">Portfolio</a>
+</div>
+<div>
+  <center>
+         <div class="button-container" >
+           <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Facebook"><i class="fa fa-facebook"></i></a>
+           <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Twitter"><i class="fa fa-twitter"></i></a>
+           <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Google+"><i class="fa fa-google-plus"></i></a>
+           <a class="btn btn-default btn-round btn-lg btn-icon" href="#" rel="tooltip" title="Follow me on Instagram"><i class="fa fa-instagram"></i></a>
+   </div>
+  </center>
+</div>     
+
+<div class="section" id="about">
+  <div class="container">
+    <div class="card" data-aos="fade-up" data-aos-offset="10">
+      <div class="row">
+        <div class="col-lg-6 col-md-12">
+          <div class="card-body">
+            <div class="h4 mt-0 title">About</div>
+            <p id="titlehellow">Hello! I am Farook.</p>
+            <p id="titleConnent" ></p>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-sm-4"><strong class="text-uppercase" >Age:</strong></div>
+              <div class="col-sm-8" id="age">24</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase" >Email:</strong></div>
+              <div class="col-sm-8" id="email">panuwatsomjai@gmail.com</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase" >Phone:</strong></div>
+              <div class="col-sm-8" id="tel">+66 0848466529</div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-sm-4"><strong class="text-uppercase" >Address:</strong></div>
+              <div class="col-sm-8" id="address">115 klongyang koh Lanta Krabi 81120</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="skill">
+  <div class="container">
+    <div class="h4 text-center mb-4 title">Professional Skills</div>
+    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="card-body">
+        <!--
+          <div class="row"></div>
+                <div id="ViewSkill"></div>
+      -->
+   
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">HTML</span>
+              <span class="progress-value" style="float: right;">50%</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">CSS</span>
+              <span class="progress-value" style="float: right;">50%</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">JavaScript</span>
+              <span class="progress-value" style="float: right;">30%</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">PHP</span>
+              <span class="progress-value" style="float: right;">30%</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 30%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">C#</span>
+              <span class="progress-value" style="float: right;">40%</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="progress-container progress-primary"><span class="progress-badge">JAVA</span>
+              <span class="progress-value" style="float: right;">10%</span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-primary" data-aos="progress-full" data-aos-offset="10" data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 10%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section" id="experience">
+  <div class="container cc-experience">
+    <div class="h4 text-center mb-4 title">Experience</div>
+       <div id="ViewExperian"></div>
+  </div>
+</div>
+
+<div class="section" id="education">
+  <div class="container cc-education">
+    <div class="h4 text-center mb-4 title">Education</div>
+       <div id="ViewEducation"></div>
+  </div>
+</div>
+
+<div class="section" id="Portfolio">
+  <div class="container">
+   <div class="h4 text-center mb-4 title">Portfolio</div>
+   <div class="row">
+      <div class="cards1">
+          <div id="test12"></div>
+      </div>
+   </div>
+  </div>
+</div>
+<footer class="footer">
+  <div class="container text-center"><a class="cc-facebook btn btn-link" href="#"><i class="fa fa-facebook fa-2x " aria-hidden="true"></i></a><a class="cc-twitter btn btn-link " href="#"><i class="fa fa-twitter fa-2x " aria-hidden="true"></i></a><a class="cc-google-plus btn btn-link" href="#"><i class="fa fa-google-plus fa-2x" aria-hidden="true"></i></a><a class="cc-instagram btn btn-link" href="#"><i class="fa fa-instagram fa-2x " aria-hidden="true"></i></a></div>
+  <div class="h4 title text-center">Panuwat Somjai</div>
+</footer>
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>var PathURL='https://us-central1-xsion-93b36.cloudfunctions.net/IsMe/'; </script>
+    <script src="./js/App.js"></script>
+    <script src="./js/About.js"></script>
+    <script src="./js/Skill.js"></script>
+    <script src="./js/Education.js"></script>
+    <script src="./js/Experience.js"></script>
+    <script src="./js/Project.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
